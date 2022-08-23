@@ -1,0 +1,12 @@
+1. w klasie program należy poprawić nazwę pliku z dataa.csv na data.csv.
+2. w klasie ImportedObject można usunąć właściwość Name, gdyż występuje ona w klasie bazowej.
+3. właściwość IsNullable powinna być boolem, a nie stringiem. 
+4. NumberOfChildren proponuję zmienić z double na int - wartość całkowitą.
+5. Metoda ImportAndPrintData jest mocno rozudowana, wskazane by było ją podzielić na mniejsze części funcyjne.
+6. w klasie DataReader, w linijce 62 można zmienić ciało warunku, 
+        zamiast: importedObject.NumberOfChildren = 1 + importedObject.NumberOfChildren;
+        można zastosować: importedObject.NumberOfChildren = importedObject.NumberOfChildren++;
+7. linia 27, proponuję rozpocząć iterowanie od 1 a nie od 0;
+8. linia 109, właściwość ParentType sformatować tak jak pozostałe właściwości w jednej linii.
+9. można pomijać puste linie podczas przechodzenia przez listę. Zamiast pętli for można by było spróbować skorzystać z foreach w linii 27 w klasie DataReader. Niestety nie mogłem tego wypróbować, gdyż nie umiałem rozwiązać błędu System.IndexOutOfRangeException  DataReader.cs:line 42
+
